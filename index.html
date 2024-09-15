@@ -37,6 +37,28 @@
         </div>
     </section>
 
+    <!-- DevOps Process Animation Section -->
+    <section id="devops-process">
+        <div class="sliding-container">
+            <div class="logo-stage">
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Code">
+                <p>Code</p>
+            </div>
+            <div class="logo-stage">
+                <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Build">
+                <p>Build</p>
+            </div>
+            <div class="logo-stage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Test">
+                <p>Test</p>
+            </div>
+            <div class="logo-stage">
+                <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Deploy">
+                <p>Deploy</p>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
@@ -100,9 +122,7 @@
         <div class="container">
             <h2>Contact</h2>
             <p>Email: pialroy31416@gmail.com</p>
-
-	<p>LinkedIn: <a href="https://www.linkedin.com/in/pialroy" target="_blank">https://www.linkedin.com/in/pialroy</a></p>
-
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/pialroy" target="_blank">https://www.linkedin.com/in/pialroy</a></p>
             <p>GitHub: <a href="https://github.com/pial-roy" target="_blank">https://github.com/pial-roy</a></p>
         </div>
     </section>
@@ -112,6 +132,29 @@
         <p>&copy; 2024 Pial Roy. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Your JavaScript logic will be run after DOM is fully loaded
+        });
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+
+
+
+<audio id="background-audio" autoplay loop muted>
+    <source src="kiki.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.getElementById("background-audio");
+        audio.muted = false; // Unmute the audio after the page loads
+    });
+</script>
+
+
 </html>
