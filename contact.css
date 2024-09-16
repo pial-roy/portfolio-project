@@ -1,0 +1,91 @@
+/* Default (Light Theme) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --form-background: #f8f9fa;
+    --form-text: #000000;
+    --input-background: #ffffff;
+    --input-border: #cccccc;
+    --button-background: #4CAF50;
+    --button-hover: #45a049;
+    --confirmation-background: #28a745;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --form-background: #1e1e1e;
+    --form-text: #ffffff;
+    --input-background: #2c2c2c;
+    --input-border: #444;
+    --button-background: #4CAF50;
+    --button-hover: #45a049;
+    --confirmation-background: #28a745;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color); /* Background color based on theme */
+    color: var(--text-color); /* Text color based on theme */
+}
+
+#contact-form {
+    background-color: var(--form-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color); /* Label color based on theme */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--input-background); /* Background color for inputs */
+    color: var(--form-text); /* Text color for inputs */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#confirmation-message {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--confirmation-background);
+    color: var(--text-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#contact p {
+    color: var(--text-color); /* Text color for paragraphs based on theme */
+}
+
+#contact a {
+    color: var(--text-color); /* Link color based on theme */
+}
