@@ -12,15 +12,27 @@
 
 
     
-    <audio id="background-audio" autoplay loop muted>
+    <audio id="background-audio" loop>
         <source src="kiki.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     
+    <button id="play-pause-btn">Listen to A Town With an Ocean View from kiki's delivery service</button>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const audio = document.getElementById("background-audio");
-            audio.muted = false; // Unmute the audio after the page loads
+            const playPauseBtn = document.getElementById("play-pause-btn");
+    
+            playPauseBtn.addEventListener('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    playPauseBtn.textContent = 'Pause the music';
+                } else {
+                    audio.pause();
+                    playPauseBtn.textContent = "Listen to A Town With an Ocean View from kiki's delivery service";
+                }
+            });
         });
     </script>
 
@@ -171,7 +183,7 @@
   <!-- Link to the external CSS and JS files -->
   <link rel="stylesheet" href="contact.css">
   <script src="js/contact.js"></script>
-            <p></p>
+
             <p>Email: pialroy31416@gmail.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/pialroy" target="_blank">https://www.linkedin.com/in/pialroy</a></p>
             <p>GitHub: <a href="https://github.com/pial-roy" target="_blank">https://github.com/pial-roy</a></p>
