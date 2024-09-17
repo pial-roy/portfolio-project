@@ -89,3 +89,61 @@ button:hover {
 #contact a {
     color: var(--text-color); /* Link color based on theme */
 }
+
+
+
+/* Rating Section Styling */
+.rating-form {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between items */
+    margin-top: 20px; /* Space above the rating form */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+.rating-form div {
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* Space between radio buttons and labels */
+}
+
+.rating-form input[type="radio"] {
+    width: 20px; /* Adjust radio button size */
+    height: 20px; /* Adjust radio button size */
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+.rating-form label {
+    font-size: 18px; /* Adjust label font size */
+}
+
+.rating-form button {
+    padding: 10px 15px; /* Adjust button padding for better fit */
+    font-size: 14px; /* Adjust button font size */
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 20%; /* Prevent button from shrinking */
+    margin-left: 10px; /* Space between rating options and button */
+    max-width: 100%; /* Ensure button doesn't exceed container width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.rating-form button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Ensure form elements are responsive */
+@media (max-width: 600px) {
+    .rating-form {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .rating-form button {
+        margin-top: 10px; /* Space between rating options and button on small screens */
+        width: 100%; /* Make button full-width on small screens */
+    }
+}
